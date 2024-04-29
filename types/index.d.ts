@@ -3,16 +3,16 @@
 import { IImage } from "@/lib/database/models/image.model";
 
 // ====== USER PARAMS
-export declare type CreateUserParams = {
+declare type CreateUserParams = {
     clerkId: string;
     email: string;
     username: string;
     firstName: string;
-    lastName: string;
+    lastName: string; 
     photo: string;
   };
   
-export  declare type UpdateUserParams = {
+ declare type UpdateUserParams = {
     firstName: string;
     lastName: string;
     username: string;
@@ -115,7 +115,7 @@ export  declare type UpdateUserParams = {
     keysToRemove: string[];
   };
   
-  declare type SearchParamProps = {
+export  declare type SearchParamProps = {
     params: { id: string; type: TransformationTypeKey };
     searchParams: { [key: string]: string | string[] | undefined };
   };
